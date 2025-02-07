@@ -1,0 +1,27 @@
+{
+  "name": "@ararog/odonto-chat-db",
+  "version": "0.0.1",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev --skip-generate",
+    "db:deploy": "prisma migrate deploy",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "6.1.0"
+  },
+  "devDependencies": {
+    "@ararog/typescript-config": "workspace:*",
+    "@types/node": "^20.17.16",
+    "prisma": "^6.1.0",
+    "ts-node": "10.9.2",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.3"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  }
+}

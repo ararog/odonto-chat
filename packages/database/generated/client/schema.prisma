@@ -1,0 +1,45 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            Int                 @id @default(autoincrement())
+  email         String              @unique
+  password      String
+  name          String?
+  emailVerified DateTime?           @map("email_verified")
+  trialEndsAt   DateTime?           @map("trial_ends_at")
+  subcribedAt   DateTime?           @map("subscribed_at")
+  subscription  Subscription?
+  tokens        VerificationToken[]
+
+  @@map("users")
+}
+
+model VerificationToken {
+  userId  Int       @db.Integer
+  token   String    @db.VarChar(8)
+  expires DateTime?
+  user    User      @relation(fields: [userId], references: [id])
+
+  @@unique([userId, token])
+  @@map("verification_tokens")
+}
+
+model Subscription {
+  userId         Int    @db.Integer
+  subscriptionId String @db.VarChar(70)
+  customerId     String @db.VarChar(70)
+  productId      String @db.VarChar(70)
+  status         String @db.VarChar(20)
+  user           User   @relation(fields: [userId], references: [id])
+
+  @@unique([userId])
+  @@map("subscriptions")
+}

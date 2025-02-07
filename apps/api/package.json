@@ -1,0 +1,49 @@
+{
+  "name": "odonto-chat-api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack --port 3000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint --max-warnings 0",
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^1.1.9",
+    "@apollo/server": "^4.11.3",
+    "@ararog/odonto-chat-db": "workspace:*",
+    "@as-integrations/next": "^3.2.0",
+    "@sendgrid/mail": "^8.1.4",
+    "ai": "^4.1.17",
+    "bcryptjs": "2.4.3",
+    "graphql": "^16.10.0",
+    "graphql-middleware": "6.1.35",
+    "graphql-scalars": "1.24.1",
+    "graphql-shield": "7.6.5",
+    "graphql-tag": "^2.12.6",
+    "graphql-yoga": "^5.10.11",
+    "handlebars": "^4.7.8",
+    "jose": "^5.9.6",
+    "jsonwebtoken": "9.0.2",
+    "next": "^15.1.6",
+    "next-themes": "^0.4.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-markdown": "^9.0.3",
+    "remark-gfm": "^4.0.0",
+    "remeda": "2",
+    "shiki": "^2.2.0",
+    "sonner": "^1.7.4",
+    "stripe": "^17.6.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.2.0",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.8",
+    "@types/node": "^22",
+    "@types/react": "19.0.8",
+    "@types/react-dom": "19.0.3",
+    "typescript": "5.7.3"
+  }
+}
