@@ -46,7 +46,7 @@ export const typeDefs = `
   }
 
   type Subscription {
-    subscriptionId: string!
+    subscriptionId: String!
     status: String!
   }
 
@@ -84,6 +84,11 @@ export const typeDefs = `
 
   type SuccessPayload {
     ok: Boolean
+  }
+
+  type SubscriptionPayload {
+    subscriptionId: String
+    clientSecret: String
   }
 `
 

@@ -6,7 +6,7 @@ import { Context } from "@/api/context"
 import { AuthPayload, ResetPasswordInput, SubscriptionInput, SubscriptionPayload, SuccessPayload, UserCreateInput, UserLoginInput, VerifyEmailInput } from "@/api/types"
 import { sendResetPasswordMail, sendVerificationMail } from '@/services/mail'
 
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || 'api_key_placeholder');
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || 'api_key_placeholder');
 
 const login= async (
   _parent: unknown,
@@ -310,4 +310,4 @@ const subscribe = async (
   }
 }
 
-export {login, signup, verify, resend, forgot, reset};
+export {login, signup, verify, resend, forgot, reset, subscribe};

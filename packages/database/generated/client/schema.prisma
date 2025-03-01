@@ -15,7 +15,7 @@ model User {
   name          String?
   emailVerified DateTime?           @map("email_verified")
   trialEndsAt   DateTime?           @map("trial_ends_at")
-  subcribedAt   DateTime?           @map("subscribed_at")
+  subscribedAt  DateTime?           @map("subscribed_at")
   subscription  Subscription?
   tokens        VerificationToken[]
 

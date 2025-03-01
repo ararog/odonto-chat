@@ -1071,7 +1071,7 @@ export namespace Prisma {
     name: string | null
     emailVerified: Date | null
     trialEndsAt: Date | null
-    subcribedAt: Date | null
+    subscribedAt: Date | null
   }
 
   export type UserMaxAggregateOutputType = {
@@ -1081,7 +1081,7 @@ export namespace Prisma {
     name: string | null
     emailVerified: Date | null
     trialEndsAt: Date | null
-    subcribedAt: Date | null
+    subscribedAt: Date | null
   }
 
   export type UserCountAggregateOutputType = {
@@ -1091,7 +1091,7 @@ export namespace Prisma {
     name: number
     emailVerified: number
     trialEndsAt: number
-    subcribedAt: number
+    subscribedAt: number
     _all: number
   }
 
@@ -1111,7 +1111,7 @@ export namespace Prisma {
     name?: true
     emailVerified?: true
     trialEndsAt?: true
-    subcribedAt?: true
+    subscribedAt?: true
   }
 
   export type UserMaxAggregateInputType = {
@@ -1121,7 +1121,7 @@ export namespace Prisma {
     name?: true
     emailVerified?: true
     trialEndsAt?: true
-    subcribedAt?: true
+    subscribedAt?: true
   }
 
   export type UserCountAggregateInputType = {
@@ -1131,7 +1131,7 @@ export namespace Prisma {
     name?: true
     emailVerified?: true
     trialEndsAt?: true
-    subcribedAt?: true
+    subscribedAt?: true
     _all?: true
   }
 
@@ -1228,7 +1228,7 @@ export namespace Prisma {
     name: string | null
     emailVerified: Date | null
     trialEndsAt: Date | null
-    subcribedAt: Date | null
+    subscribedAt: Date | null
     _count: UserCountAggregateOutputType | null
     _avg: UserAvgAggregateOutputType | null
     _sum: UserSumAggregateOutputType | null
@@ -1257,7 +1257,7 @@ export namespace Prisma {
     name?: boolean
     emailVerified?: boolean
     trialEndsAt?: boolean
-    subcribedAt?: boolean
+    subscribedAt?: boolean
     subscription?: boolean | User$subscriptionArgs<ExtArgs>
     tokens?: boolean | User$tokensArgs<ExtArgs>
     _count?: boolean | UserCountOutputTypeDefaultArgs<ExtArgs>
@@ -1270,7 +1270,7 @@ export namespace Prisma {
     name?: boolean
     emailVerified?: boolean
     trialEndsAt?: boolean
-    subcribedAt?: boolean
+    subscribedAt?: boolean
   }, ExtArgs["result"]["user"]>
 
   export type UserSelectScalar = {
@@ -1280,7 +1280,7 @@ export namespace Prisma {
     name?: boolean
     emailVerified?: boolean
     trialEndsAt?: boolean
-    subcribedAt?: boolean
+    subscribedAt?: boolean
   }
 
   export type UserInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -1303,7 +1303,7 @@ export namespace Prisma {
       name: string | null
       emailVerified: Date | null
       trialEndsAt: Date | null
-      subcribedAt: Date | null
+      subscribedAt: Date | null
     }, ExtArgs["result"]["user"]>
     composites: {}
   }
@@ -1705,7 +1705,7 @@ export namespace Prisma {
     readonly name: FieldRef<"User", 'String'>
     readonly emailVerified: FieldRef<"User", 'DateTime'>
     readonly trialEndsAt: FieldRef<"User", 'DateTime'>
-    readonly subcribedAt: FieldRef<"User", 'DateTime'>
+    readonly subscribedAt: FieldRef<"User", 'DateTime'>
   }
     
 
@@ -4006,7 +4006,7 @@ export namespace Prisma {
     name: 'name',
     emailVerified: 'emailVerified',
     trialEndsAt: 'trialEndsAt',
-    subcribedAt: 'subcribedAt'
+    subscribedAt: 'subscribedAt'
   };
 
   export type UserScalarFieldEnum = (typeof UserScalarFieldEnum)[keyof typeof UserScalarFieldEnum]
@@ -4130,7 +4130,7 @@ export namespace Prisma {
     name?: StringNullableFilter<"User"> | string | null
     emailVerified?: DateTimeNullableFilter<"User"> | Date | string | null
     trialEndsAt?: DateTimeNullableFilter<"User"> | Date | string | null
-    subcribedAt?: DateTimeNullableFilter<"User"> | Date | string | null
+    subscribedAt?: DateTimeNullableFilter<"User"> | Date | string | null
     subscription?: XOR<SubscriptionNullableScalarRelationFilter, SubscriptionWhereInput> | null
     tokens?: VerificationTokenListRelationFilter
   }
@@ -4142,7 +4142,7 @@ export namespace Prisma {
     name?: SortOrderInput | SortOrder
     emailVerified?: SortOrderInput | SortOrder
     trialEndsAt?: SortOrderInput | SortOrder
-    subcribedAt?: SortOrderInput | SortOrder
+    subscribedAt?: SortOrderInput | SortOrder
     subscription?: SubscriptionOrderByWithRelationInput
     tokens?: VerificationTokenOrderByRelationAggregateInput
   }
@@ -4157,7 +4157,7 @@ export namespace Prisma {
     name?: StringNullableFilter<"User"> | string | null
     emailVerified?: DateTimeNullableFilter<"User"> | Date | string | null
     trialEndsAt?: DateTimeNullableFilter<"User"> | Date | string | null
-    subcribedAt?: DateTimeNullableFilter<"User"> | Date | string | null
+    subscribedAt?: DateTimeNullableFilter<"User"> | Date | string | null
     subscription?: XOR<SubscriptionNullableScalarRelationFilter, SubscriptionWhereInput> | null
     tokens?: VerificationTokenListRelationFilter
   }, "id" | "email">
@@ -4169,7 +4169,7 @@ export namespace Prisma {
     name?: SortOrderInput | SortOrder
     emailVerified?: SortOrderInput | SortOrder
     trialEndsAt?: SortOrderInput | SortOrder
-    subcribedAt?: SortOrderInput | SortOrder
+    subscribedAt?: SortOrderInput | SortOrder
     _count?: UserCountOrderByAggregateInput
     _avg?: UserAvgOrderByAggregateInput
     _max?: UserMaxOrderByAggregateInput
@@ -4187,7 +4187,7 @@ export namespace Prisma {
     name?: StringNullableWithAggregatesFilter<"User"> | string | null
     emailVerified?: DateTimeNullableWithAggregatesFilter<"User"> | Date | string | null
     trialEndsAt?: DateTimeNullableWithAggregatesFilter<"User"> | Date | string | null
-    subcribedAt?: DateTimeNullableWithAggregatesFilter<"User"> | Date | string | null
+    subscribedAt?: DateTimeNullableWithAggregatesFilter<"User"> | Date | string | null
   }
 
   export type VerificationTokenWhereInput = {
@@ -4301,7 +4301,7 @@ export namespace Prisma {
     name?: string | null
     emailVerified?: Date | string | null
     trialEndsAt?: Date | string | null
-    subcribedAt?: Date | string | null
+    subscribedAt?: Date | string | null
     subscription?: SubscriptionCreateNestedOneWithoutUserInput
     tokens?: VerificationTokenCreateNestedManyWithoutUserInput
   }
@@ -4313,7 +4313,7 @@ export namespace Prisma {
     name?: string | null
     emailVerified?: Date | string | null
     trialEndsAt?: Date | string | null
-    subcribedAt?: Date | string | null
+    subscribedAt?: Date | string | null
     subscription?: SubscriptionUncheckedCreateNestedOneWithoutUserInput
     tokens?: VerificationTokenUncheckedCreateNestedManyWithoutUserInput
   }
@@ -4324,7 +4324,7 @@ export namespace Prisma {
     name?: NullableStringFieldUpdateOperationsInput | string | null
     emailVerified?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     trialEndsAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    subcribedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    subscribedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     subscription?: SubscriptionUpdateOneWithoutUserNestedInput
     tokens?: VerificationTokenUpdateManyWithoutUserNestedInput
   }
@@ -4336,7 +4336,7 @@ export namespace Prisma {
     name?: NullableStringFieldUpdateOperationsInput | string | null
     emailVerified?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     trialEndsAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    subcribedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    subscribedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     subscription?: SubscriptionUncheckedUpdateOneWithoutUserNestedInput
     tokens?: VerificationTokenUncheckedUpdateManyWithoutUserNestedInput
   }
@@ -4348,7 +4348,7 @@ export namespace Prisma {
     name?: string | null
     emailVerified?: Date | string | null
     trialEndsAt?: Date | string | null
-    subcribedAt?: Date | string | null
+    subscribedAt?: Date | string | null
   }
 
   export type UserUpdateManyMutationInput = {
@@ -4357,7 +4357,7 @@ export namespace Prisma {
     name?: NullableStringFieldUpdateOperationsInput | string | null
     emailVerified?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     trialEndsAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    subcribedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    subscribedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type UserUncheckedUpdateManyInput = {
@@ -4367,7 +4367,7 @@ export namespace Prisma {
     name?: NullableStringFieldUpdateOperationsInput | string | null
     emailVerified?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     trialEndsAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    subcribedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    subscribedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type VerificationTokenCreateInput = {
@@ -4545,7 +4545,7 @@ export namespace Prisma {
     name?: SortOrder
     emailVerified?: SortOrder
     trialEndsAt?: SortOrder
-    subcribedAt?: SortOrder
+    subscribedAt?: SortOrder
   }
 
   export type UserAvgOrderByAggregateInput = {
@@ -4559,7 +4559,7 @@ export namespace Prisma {
     name?: SortOrder
     emailVerified?: SortOrder
     trialEndsAt?: SortOrder
-    subcribedAt?: SortOrder
+    subscribedAt?: SortOrder
   }
 
   export type UserMinOrderByAggregateInput = {
@@ -4569,7 +4569,7 @@ export namespace Prisma {
     name?: SortOrder
     emailVerified?: SortOrder
     trialEndsAt?: SortOrder
-    subcribedAt?: SortOrder
+    subscribedAt?: SortOrder
   }
 
   export type UserSumOrderByAggregateInput = {
@@ -5063,7 +5063,7 @@ export namespace Prisma {
     name?: string | null
     emailVerified?: Date | string | null
     trialEndsAt?: Date | string | null
-    subcribedAt?: Date | string | null
+    subscribedAt?: Date | string | null
     subscription?: SubscriptionCreateNestedOneWithoutUserInput
   }
 
@@ -5074,7 +5074,7 @@ export namespace Prisma {
     name?: string | null
     emailVerified?: Date | string | null
     trialEndsAt?: Date | string | null
-    subcribedAt?: Date | string | null
+    subscribedAt?: Date | string | null
     subscription?: SubscriptionUncheckedCreateNestedOneWithoutUserInput
   }
 
@@ -5100,7 +5100,7 @@ export namespace Prisma {
     name?: NullableStringFieldUpdateOperationsInput | string | null
     emailVerified?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     trialEndsAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    subcribedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    subscribedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     subscription?: SubscriptionUpdateOneWithoutUserNestedInput
   }
 
@@ -5111,7 +5111,7 @@ export namespace Prisma {
     name?: NullableStringFieldUpdateOperationsInput | string | null
     emailVerified?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     trialEndsAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    subcribedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    subscribedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     subscription?: SubscriptionUncheckedUpdateOneWithoutUserNestedInput
   }
 
@@ -5121,7 +5121,7 @@ export namespace Prisma {
     name?: string | null
     emailVerified?: Date | string | null
     trialEndsAt?: Date | string | null
-    subcribedAt?: Date | string | null
+    subscribedAt?: Date | string | null
     tokens?: VerificationTokenCreateNestedManyWithoutUserInput
   }
 
@@ -5132,7 +5132,7 @@ export namespace Prisma {
     name?: string | null
     emailVerified?: Date | string | null
     trialEndsAt?: Date | string | null
-    subcribedAt?: Date | string | null
+    subscribedAt?: Date | string | null
     tokens?: VerificationTokenUncheckedCreateNestedManyWithoutUserInput
   }
 
@@ -5158,7 +5158,7 @@ export namespace Prisma {
     name?: NullableStringFieldUpdateOperationsInput | string | null
     emailVerified?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     trialEndsAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    subcribedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    subscribedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     tokens?: VerificationTokenUpdateManyWithoutUserNestedInput
   }
 
@@ -5169,7 +5169,7 @@ export namespace Prisma {
     name?: NullableStringFieldUpdateOperationsInput | string | null
     emailVerified?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     trialEndsAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    subcribedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    subscribedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     tokens?: VerificationTokenUncheckedUpdateManyWithoutUserNestedInput
   }
 

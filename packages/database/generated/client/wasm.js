@@ -124,7 +124,7 @@ exports.Prisma.UserScalarFieldEnum = {
   name: 'name',
   emailVerified: 'emailVerified',
   trialEndsAt: 'trialEndsAt',
-  subcribedAt: 'subcribedAt'
+  subscribedAt: 'subscribedAt'
 };
 
 exports.Prisma.VerificationTokenScalarFieldEnum = {
